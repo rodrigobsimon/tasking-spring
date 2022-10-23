@@ -14,7 +14,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequiredArgsConstructor
-public class AddTaskController {
+public class AddTaskRestController {
 
 	private final AddTaskUseCase addTaskUseCase;
 

@@ -14,8 +14,8 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.then;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(controllers = AddTaskController.class)
-class AddTaskControllerTest {
+@WebMvcTest(controllers = AddTaskRestController.class)
+class AddTaskRestControllerTest {
 
 	@MockBean private AddTaskUseCase addTaskUseCase;
 	@Autowired private MockMvc mockMvc;
