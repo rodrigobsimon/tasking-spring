@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css
+    "
+          rel="stylesheet"
+  />
+  <title>Tasks</title>
+</head>
+<body>
+<form
+        action="#"
+        method="post"
+        th:action="@{/tasks/add-task}"
+        th:object="${request}"
+>
+  <div>
+    <p>
+      Description:
+      <input id="description" name="description" type="text"/>
+      <button
+              type="submit"
+      >
+        Add
+      </button>
+    </p>
+  </div>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+</html>
