@@ -21,7 +21,7 @@ public class AddTaskRestController {
 	@PostMapping(path = "/api/v1/tasks/add-task")
 	public ResponseEntity<Void> addTask(@RequestBody @Valid AddTaskRequest request) {
 
-		addTaskUseCase.execute(new Task(request.description()));
+		addTaskUseCase.execute(new Task(request.getDescription()));
 
 		return ResponseEntity.status(HttpStatus.CREATED)
 		                     .build();
