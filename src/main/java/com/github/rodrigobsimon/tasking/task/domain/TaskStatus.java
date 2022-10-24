@@ -1,5 +1,7 @@
 package com.github.rodrigobsimon.tasking.task.domain;
 
 public enum TaskStatus {
-	TODO
+	TODO,
+	DOING,
+	DONE
 }
