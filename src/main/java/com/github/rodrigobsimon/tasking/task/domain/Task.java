@@ -12,7 +12,7 @@ import java.util.UUID;
 @Getter
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Task {
+public class Task implements TaskBoardItem {
 
 	@EqualsAndHashCode.Include private final String id = UUID.randomUUID()
 	                                                         .toString();
